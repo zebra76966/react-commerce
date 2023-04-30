@@ -1,0 +1,246 @@
+[
+  {
+    "product_name": "ADIZERO BOSTON 11 SHOES",
+    "brand": "Addidas",
+    "category": "Shoes",
+    "color": "white",
+    "size": [7, 8, 9, 10],
+    "price": "₹13 999.00",
+    "gender": "Men",
+    "image_urls": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d9b6d1d1b14a4a2f9595af8e0092a404_9366/Adizero_Boston_11_Shoes_White_HQ3694_01_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ade7c4a7861d4f3cac45af8e0092b684_9366/Adizero_Boston_11_Shoes_White_HQ3694_02_standard_hover.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bdaf7e06e3fb4b6b9491af8e0092c06e_9366/Adizero_Boston_11_Shoes_White_HQ3694_03_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ead585765c28417c975eaf8e0092c9ed_9366/Adizero_Boston_11_Shoes_White_HQ3694_04_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d1088bdbfbae4b949181af8e0092d5ec_9366/Adizero_Boston_11_Shoes_White_HQ3694_05_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b7842bb44a1f427b8a3daf8e0092ac1a_9366/Adizero_Boston_11_Shoes_White_HQ3694_06_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/536b2bdc633d4c5a8651af8e00a20b8a_9366/Adizero_Boston_11_Shoes_White_HQ3694_09_standard.jpg"
+    ]
+  },
+  {
+    "product_name": "SUPERSTAR SHOES",
+    "brand": "Addidas",
+    "category": "Shoes",
+    "color": "White",
+    "size": [7, 8, 9, 10],
+    "price": "₹8 999.00",
+    "material": "Cotton",
+    "season": "Summer",
+    "gender": "Women",
+    "image_urls": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7ed0855435194229a525aad6009a0497_9366/SUPERSTAR_SHOES_White_EG4958_01_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8a358bcd5e3d453da815aad6009a249e_9366/SUPERSTAR_SHOES_White_EG4958_02_standard_hover.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3708ab90979a4ba59535aad6009a2fa8_9366/SUPERSTAR_SHOES_White_EG4958_03_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ff2e419f1eda4ebab23faad6009a3a9e_9366/SUPERSTAR_SHOES_White_EG4958_04_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/31cf91f6e16c4f0aa11caad6009a4590_9366/SUPERSTAR_SHOES_White_EG4958_05_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/27a4cab6236447958c5caad6009a19be_9366/SUPERSTAR_SHOES_White_EG4958_06_standard.jpg"
+    ]
+  },
+  {
+    "product_name": "X_PLRBOOST SHOES",
+    "brand": "Addidas",
+    "category": "Shoes",
+    "color": "White",
+    "size": [7, 8, 9, 10],
+    "price": "₹17 999.00",
+    "material": "Cotton",
+    "season": "Summer",
+    "gender": "Men",
+    "image_urls": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a888a07461104c6b8359af9c00c4511e_9366/X_PLRBOOST_Shoes_Green_HP3129_01_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/53fa5dc13f22464cb99daf9c00c46740_9366/X_PLRBOOST_Shoes_Green_HP3129_02_standard_hover.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0bc764c12eda46ce9a31af9c00c46f90_9366/X_PLRBOOST_Shoes_Green_HP3129_03_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a7e1fb41dae346d98223af9c00c477cc_9366/X_PLRBOOST_Shoes_Green_HP3129_04_standard.jpg"
+    ]
+  },
+  {
+    "product_name": "SUPERSTAR SHOES V2",
+    "brand": "Addidas",
+    "category": "Shoes",
+    "color": "White",
+    "size": [7, 8, 9, 10],
+    "price": "₹12 999.00",
+    "material": "Cotton",
+    "season": "Summer",
+    "gender": "Men",
+    "image_urls": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/17d664f45e474661ba2caf8f015c2ba7_9366/Superstar_Shoes_Beige_GW2176_01_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a8118cc67d344ef79966afa50080b6f9_9366/Superstar_Shoes_Beige_GW2176_010_hover_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3db870c3ded44ad6ae15af900033220d_9366/Superstar_Shoes_Beige_GW2176_02_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3db870c3ded44ad6ae15af900033220d_9366/Superstar_Shoes_Beige_GW2176_02_standard.jpg"
+    ]
+  },
+  {
+    "product_name": "ULTRABOOST 1.0 SHOES",
+    "brand": "Addidas",
+    "category": "Shoes",
+    "color": "White",
+    "size": [7, 8, 9, 10],
+    "price": "₹17 999.00",
+    "material": "Cotton",
+    "season": "Summer",
+    "gender": "Men",
+    "image_urls": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8a47f2c9bce84533a296af430121806d_9366/Ultraboost_1.0_Shoes_Green_HR0056_01_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/680e4f64bb40496baa1eaf430122a4cd_9366/Ultraboost_1.0_Shoes_Green_HR0056_02_standard_hover.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/818ba5d76e53497bb539af43012254cd_9366/Ultraboost_1.0_Shoes_Green_HR0056_03_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/84424ccdbda54d189ffbaf430123b1a0_9366/Ultraboost_1.0_Shoes_Green_HR0056_04_standard.jpg"
+    ]
+  },
+  {
+    "product_name": "PUREBOOST 22 SHOES",
+    "brand": "Addidas",
+    "category": "Shoes",
+    "color": "White",
+    "size": [7, 8, 9, 10],
+    "price": "₹11 999.00",
+    "material": "Cotton",
+    "season": "Summer",
+    "gender": "Men",
+    "image_urls": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b08aa27b38684cbe9fe6af5400ebf18b_9366/Pureboost_22_Shoes_Black_HP9014_01_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/e52e019e28f042c1a077af5400ec01fb_9366/Pureboost_22_Shoes_Black_HP9014_02_standard_hover.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/dfe0d6873a28416e898baf5400ec0c2c_9366/Pureboost_22_Shoes_Black_HP9014_03_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b237d1a279b9420b83e2af5400ec1e49_9366/Pureboost_22_Shoes_Black_HP9014_05_standard.jpg"
+    ]
+  },
+  {
+    "product_name": "PUREBOOST 22 SHOES V2",
+    "brand": "Addidas",
+    "category": "Shoes",
+    "color": "White",
+    "size": [7, 8, 9, 10],
+    "price": "₹11 999.00",
+    "material": "Cotton",
+    "season": "Summer",
+    "gender": "Men",
+    "image_urls": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c213f7c1e4644ecd8d9eadfe011e5422_9366/Pureboost_22_Shoes_Black_GW8589_01_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/818d6d5493b041bd96f5adfe011e6376_9366/Pureboost_22_Shoes_Black_GW8589_02_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3d03b58124c0468d8ce5adfe011e6b8e_9366/Pureboost_22_Shoes_Black_GW8589_03_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/f9fa47b70fcf439ab5bdadfe011e7b99_9366/Pureboost_22_Shoes_Black_GW8589_05_standard.jpg"
+    ]
+  },
+  {
+    "product_name": "ADIFLY BOSTON 11 SHOES",
+    "brand": "Addidas",
+    "category": "Shoes",
+    "color": "white",
+    "size": [7, 8, 9, 10],
+    "price": "₹13 999.00",
+    "gender": "Women",
+    "image_urls": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d9b6d1d1b14a4a2f9595af8e0092a404_9366/Adizero_Boston_11_Shoes_White_HQ3694_01_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ade7c4a7861d4f3cac45af8e0092b684_9366/Adizero_Boston_11_Shoes_White_HQ3694_02_standard_hover.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bdaf7e06e3fb4b6b9491af8e0092c06e_9366/Adizero_Boston_11_Shoes_White_HQ3694_03_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ead585765c28417c975eaf8e0092c9ed_9366/Adizero_Boston_11_Shoes_White_HQ3694_04_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d1088bdbfbae4b949181af8e0092d5ec_9366/Adizero_Boston_11_Shoes_White_HQ3694_05_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b7842bb44a1f427b8a3daf8e0092ac1a_9366/Adizero_Boston_11_Shoes_White_HQ3694_06_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/536b2bdc633d4c5a8651af8e00a20b8a_9366/Adizero_Boston_11_Shoes_White_HQ3694_09_standard.jpg"
+    ]
+  },
+  {
+    "product_name": "SUPERQUEEN SHOES",
+    "brand": "Addidas",
+    "category": "Shoes",
+    "color": "White",
+    "size": [7, 8, 9, 10],
+    "price": "₹8 999.00",
+    "material": "Cotton",
+    "season": "Summer",
+    "gender": "Women",
+    "image_urls": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7ed0855435194229a525aad6009a0497_9366/SUPERSTAR_SHOES_White_EG4958_01_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8a358bcd5e3d453da815aad6009a249e_9366/SUPERSTAR_SHOES_White_EG4958_02_standard_hover.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3708ab90979a4ba59535aad6009a2fa8_9366/SUPERSTAR_SHOES_White_EG4958_03_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ff2e419f1eda4ebab23faad6009a3a9e_9366/SUPERSTAR_SHOES_White_EG4958_04_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/31cf91f6e16c4f0aa11caad6009a4590_9366/SUPERSTAR_SHOES_White_EG4958_05_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/27a4cab6236447958c5caad6009a19be_9366/SUPERSTAR_SHOES_White_EG4958_06_standard.jpg"
+    ]
+  },
+  {
+    "product_name": "X_PLRBOOST SHOES",
+    "brand": "Addidas",
+    "category": "Shoes",
+    "color": "White",
+    "size": [7, 8, 9, 10],
+    "price": "₹17 999.00",
+    "material": "Cotton",
+    "season": "Summer",
+    "gender": "Women",
+    "image_urls": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a888a07461104c6b8359af9c00c4511e_9366/X_PLRBOOST_Shoes_Green_HP3129_01_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/53fa5dc13f22464cb99daf9c00c46740_9366/X_PLRBOOST_Shoes_Green_HP3129_02_standard_hover.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0bc764c12eda46ce9a31af9c00c46f90_9366/X_PLRBOOST_Shoes_Green_HP3129_03_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a7e1fb41dae346d98223af9c00c477cc_9366/X_PLRBOOST_Shoes_Green_HP3129_04_standard.jpg"
+    ]
+  },
+  {
+    "product_name": "SUPERSTAR SHOES V2",
+    "brand": "Addidas",
+    "category": "Shoes",
+    "color": "White",
+    "size": [7, 8, 9, 10],
+    "price": "₹12 999.00",
+    "material": "Cotton",
+    "season": "Summer",
+    "gender": "Women",
+    "image_urls": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/17d664f45e474661ba2caf8f015c2ba7_9366/Superstar_Shoes_Beige_GW2176_01_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a8118cc67d344ef79966afa50080b6f9_9366/Superstar_Shoes_Beige_GW2176_010_hover_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3db870c3ded44ad6ae15af900033220d_9366/Superstar_Shoes_Beige_GW2176_02_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3db870c3ded44ad6ae15af900033220d_9366/Superstar_Shoes_Beige_GW2176_02_standard.jpg"
+    ]
+  },
+  {
+    "product_name": "ULTRA 1.0 SHOES",
+    "brand": "Addidas",
+    "category": "Shoes",
+    "color": "White",
+    "size": [7, 8, 9, 10],
+    "price": "₹17 999.00",
+    "material": "Cotton",
+    "season": "Summer",
+    "gender": "Women",
+    "image_urls": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8a47f2c9bce84533a296af430121806d_9366/Ultraboost_1.0_Shoes_Green_HR0056_01_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/680e4f64bb40496baa1eaf430122a4cd_9366/Ultraboost_1.0_Shoes_Green_HR0056_02_standard_hover.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/818ba5d76e53497bb539af43012254cd_9366/Ultraboost_1.0_Shoes_Green_HR0056_03_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/84424ccdbda54d189ffbaf430123b1a0_9366/Ultraboost_1.0_Shoes_Green_HR0056_04_standard.jpg"
+    ]
+  },
+  {
+    "product_name": "PUREBOOST 22 SHOES",
+    "brand": "Addidas",
+    "category": "Shoes",
+    "color": "White",
+    "size": [7, 8, 9, 10],
+    "price": "₹11 999.00",
+    "material": "Cotton",
+    "season": "Summer",
+    "gender": "Women",
+    "image_urls": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b08aa27b38684cbe9fe6af5400ebf18b_9366/Pureboost_22_Shoes_Black_HP9014_01_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/e52e019e28f042c1a077af5400ec01fb_9366/Pureboost_22_Shoes_Black_HP9014_02_standard_hover.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/dfe0d6873a28416e898baf5400ec0c2c_9366/Pureboost_22_Shoes_Black_HP9014_03_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b237d1a279b9420b83e2af5400ec1e49_9366/Pureboost_22_Shoes_Black_HP9014_05_standard.jpg"
+    ]
+  },
+  {
+    "product_name": "PUREBOOST 22 SHOES V2",
+    "brand": "Addidas",
+    "category": "Shoes",
+    "color": "White",
+    "size": [7, 8, 9, 10],
+    "price": "₹11 999.00",
+    "material": "Cotton",
+    "season": "Summer",
+    "gender": "Women",
+    "image_urls": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c213f7c1e4644ecd8d9eadfe011e5422_9366/Pureboost_22_Shoes_Black_GW8589_01_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/818d6d5493b041bd96f5adfe011e6376_9366/Pureboost_22_Shoes_Black_GW8589_02_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3d03b58124c0468d8ce5adfe011e6b8e_9366/Pureboost_22_Shoes_Black_GW8589_03_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/f9fa47b70fcf439ab5bdadfe011e7b99_9366/Pureboost_22_Shoes_Black_GW8589_05_standard.jpg"
+    ]
+  }
+]
