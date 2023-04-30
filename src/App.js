@@ -2,18 +2,25 @@ import logo from "./logo.svg";
 import "./App.css";
 import Main from "./components/main";
 import ProdView from "./components/itemView";
+import Cart from "./components/cart";
 import "./components/master.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/header";
+import { useState } from "react";
 
 function App() {
+  const [chk, setChk] = useState(false);
   return (
     <>
-      <Header />
       <Router>
+        <Header check={chk} />
         <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/product/:id/:cat" element={<ProdView />} />
+          <Route path="/" element={<Main check={(e) => setChk(e)} og={chk} />} />
+          <Route
+            path="/product/:id/:cat"
+            element={<ProdView check={(e) => setChk(e)} og={chk} />}
+          />
+          <Route path="/cart" element={<Cart check={(e) => setChk(e)} og={chk} />} />
         </Routes>
       </Router>
     </>

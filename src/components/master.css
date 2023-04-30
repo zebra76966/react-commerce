@@ -89,6 +89,7 @@ nav {
 a {
   text-decoration: none;
 }
+
 .productCar {
   position: relative;
 }
@@ -114,6 +115,13 @@ a {
 
 .boxSize {
   width: 80px;
+  cursor: pointer;
   height: 80px;
   display: inline-block;
+}
+
+.suggestionBox {
+  height: 150px;
+  overflow: auto;
+  white-space: nowrap;
 }

@@ -1,15 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import data from "./MOCK_DATA.json";
 import { useParams } from "react-router-dom";
-const ProdView = () => {
+const ProdView = (props) => {
   const params = useParams();
 
   const products = data;
   const [curnProd, setCurrenProd] = useState({
     id: params.id !== "all" ? params.id : 0,
-    category: params.cat !== "all" ? params.cat : "Women",
+    category: params.cat !== "all" ? params.cat : "all",
   });
+  useEffect(() => {
+    setCurrenProd({
+      ...curnProd,
+      id: params.id !== "all" ? params.id : 0,
+      category: params.cat !== "all" ? params.cat : "all",
+    });
+  }, [params]);
 
   const [crnt, setCrnt] = useState(0);
 
@@ -22,13 +29,36 @@ const ProdView = () => {
     background: "black",
     color: "white",
   };
+
+  function handleCart(e, id) {
+    let itemsArr = {
+      itemPrice: e.price,
+      itemId: id,
+      itemName: e.product_name,
+      itemThumb: e.image_urls[0],
+    };
+    if (localStorage.getItem("cart") !== null) {
+      let arr = JSON.parse(localStorage.getItem("cart"));
+
+      arr = [...arr, itemsArr];
+
+      localStorage.setItem("cart", JSON.stringify(arr));
+      props.check(!props.og);
+    } else if (localStorage.getItem("cart") == null) {
+      localStorage.setItem("cart", JSON.stringify([itemsArr]));
+      props.check(!props.og);
+    }
+  }
+
   return (
-    <>
-      {console.log(crnt)}
+    <div className="container">
+      {console.log(item)}
       <div className="row h-100 align-items-center" data-aos="zoom-in">
-        <div className="col-lg-7">
+        <div className="col-12 col-lg-7">
           {products
-            .filter((e) => e.gender == curnProd.category)
+            .filter((e) =>
+              (e.gender == curnProd.category) !== "all" ? curnProd.category : e.gender
+            )
             .map((ini, i) => {
               if (i == curnProd.id) {
                 return <img src={ini.image_urls[crnt]} className="img-fluid" />;
@@ -37,7 +67,9 @@ const ProdView = () => {
           <div className="productCar">
             <div className="imageGrid  bg-white">
               {products
-                .filter((e) => e.gender == curnProd.category)
+                .filter((e) =>
+                  (e.gender == curnProd.category) !== "all" ? curnProd.category : e.gender
+                )
                 [curnProd.id].image_urls.map((kini, j) => {
                   return (
                     <div
@@ -54,9 +86,11 @@ const ProdView = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-5">
+        <div className="col-12 col-lg-5 py-lg-3 py-5">
           {products
-            .filter((e) => e.gender == curnProd.category)
+            .filter((e) =>
+              (e.gender == curnProd.category) !== "all" ? curnProd.category : e.gender
+            )
             .map((ini, i) => {
               if (i == curnProd.id) {
                 return (
@@ -73,12 +107,40 @@ const ProdView = () => {
                             className="boxSize p-2"
                             onClick={() => setItemDesc({ ...item, itemSize: kini })}
                           >
-                            <div className="bg-dark p-3 text-center text-light fw-bold fs-5">
-                              {kini}
-                            </div>
+                            {item.itemSize == kini ? (
+                              <div className="bg-dark p-3 text-center text-light fw-bold fs-5">
+                                {kini}
+                              </div>
+                            ) : (
+                              <div className="bg-light p-3 text-center text-dark border border-2 rounded fw-bold fs-5">
+                                {kini}
+                              </div>
+                            )}
                           </div>
                         );
                       })}
+                    </div>
+                    <div className="d-flex justify-content-between  mt-4">
+                      <button
+                        onClick={() => {
+                          // setItemDesc({
+                          //   ...item,
+                          //   itemPrice: ini.price,
+                          //   itemId: i,
+                          //   itemName: ini.product_name,
+                          //   itemThumb: ini.image_urls[0],
+                          // });
+
+                          handleCart(ini, i);
+                        }}
+                        className="btn btn-outline-dark fw-bold w-100 rounded-0 fs-4 rounded-start py-2"
+                      >
+                        Cart <i className="ms-1 fa fa-plus-circle"></i>
+                      </button>
+
+                      <a href="#" className="btn btn-dark w-100 rounded-0 fs-4 rounded-end py-2">
+                        Buy Now
+                      </a>
                     </div>
                   </div>
                 );
@@ -86,7 +148,7 @@ const ProdView = () => {
             })}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

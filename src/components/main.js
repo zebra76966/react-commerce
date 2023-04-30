@@ -6,7 +6,7 @@ import Boxes from "./boxes";
 import Card from "./card";
 import data from "./MOCK_DATA.json";
 import { Link, Outlet } from "react-router-dom";
-const Main = () => {
+const Main = (props) => {
   const dataset = data;
   return (
     <>
@@ -32,9 +32,14 @@ const Main = () => {
             .map((ini, i) => {
               return (
                 <div className="col-lg-4 col-12 my-3" data-aos="fade-up">
-                  <Link to={`/product/${i}/Men`} className="link">
-                    <Card key={i} id={i} record={ini} />
-                  </Link>
+                  <Card
+                    key={i}
+                    id={i}
+                    record={ini}
+                    category="Men"
+                    ogs={props.og}
+                    checks={(e) => props.check(e)}
+                  />
                 </div>
               );
             })}
@@ -63,9 +68,14 @@ const Main = () => {
             .map((ini, i) => {
               return (
                 <div className="col-lg-4 col-12 my-3" data-aos="fade-up">
-                  <Link to={`/product/${i}/Women`} className="link">
-                    <Card key={i} id={i} record={ini} />
-                  </Link>
+                  <Card
+                    key={i}
+                    id={i}
+                    record={ini}
+                    category="Women"
+                    ogs={props.og}
+                    checks={(e) => props.check(e)}
+                  />
                 </div>
               );
             })}
