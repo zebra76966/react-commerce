@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import data from "./MOCK_DATA.json";
-import { useParams } from "react-router-dom";
+import { useParams, useLocation } from "react-router-dom";
+import Card from "./card";
 const ProdView = (props) => {
   const params = useParams();
 
@@ -10,6 +11,12 @@ const ProdView = (props) => {
     id: params.id !== "all" ? params.id : 0,
     category: params.cat !== "all" ? params.cat : "all",
   });
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   useEffect(() => {
     setCurrenProd({
       ...curnProd,
@@ -57,7 +64,7 @@ const ProdView = (props) => {
         <div className="col-12 col-lg-7">
           {products
             .filter((e) =>
-              (e.gender == curnProd.category) !== "all" ? curnProd.category : e.gender
+              curnProd.category !== "all" ? e.gender == curnProd.category : e.gender == e.gender
             )
             .map((ini, i) => {
               if (i == curnProd.id) {
@@ -68,7 +75,7 @@ const ProdView = (props) => {
             <div className="imageGrid  bg-white">
               {products
                 .filter((e) =>
-                  (e.gender == curnProd.category) !== "all" ? curnProd.category : e.gender
+                  curnProd.category !== "all" ? e.gender == curnProd.category : e.gender == e.gender
                 )
                 [curnProd.id].image_urls.map((kini, j) => {
                   return (
@@ -89,7 +96,7 @@ const ProdView = (props) => {
         <div className="col-12 col-lg-5 py-lg-3 py-5">
           {products
             .filter((e) =>
-              (e.gender == curnProd.category) !== "all" ? curnProd.category : e.gender
+              curnProd.category !== "all" ? e.gender == curnProd.category : e.gender == e.gender
             )
             .map((ini, i) => {
               if (i == curnProd.id) {
@@ -146,6 +153,37 @@ const ProdView = (props) => {
                 );
               }
             })}
+        </div>
+      </div>
+      <div className="row my-5">
+        <div className="my-3">
+          <h2 className=" display-4 text-dark fw-bold text-center mt-5 pt-5" data-aos="zoom-out">
+            SOME <span className="bg-dark text-light px-3 shadow-lg rounded">ALIKES</span>
+          </h2>
+        </div>
+
+        {products
+          .filter((e) => e.gender == curnProd.category)
+          .slice(0, 3)
+          .map((ini, i) => {
+            return (
+              <div className="col-lg-4 col-12 my-3" data-aos="fade-up">
+                <Card
+                  key={i}
+                  id={i}
+                  record={ini}
+                  category={curnProd.category}
+                  ogs={props.og}
+                  checks={(e) => props.check(e)}
+                />
+              </div>
+            );
+          })}
+        <div className="col-12 my-3 d-flex justify-content-end">
+          <button className="btn btn-lg btn-dark border-0  shadow-lg">
+            Show More
+            <i className="fa fa-chevron-right ps-3 align-middle" />
+          </button>
         </div>
       </div>
     </div>
