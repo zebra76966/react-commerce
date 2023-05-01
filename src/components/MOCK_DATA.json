@@ -242,5 +242,240 @@
       "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3d03b58124c0468d8ce5adfe011e6b8e_9366/Pureboost_22_Shoes_Black_GW8589_03_standard.jpg",
       "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/f9fa47b70fcf439ab5bdadfe011e7b99_9366/Pureboost_22_Shoes_Black_GW8589_05_standard.jpg"
     ]
+  },
+  {
+    "product_name": "DISNEY GRAPHIC TEE",
+    "brand": "Addidas",
+    "category": "clothes",
+    "color": "White",
+    "size": ["M", "L", "XL", "XXL"],
+    "price": "₹1 799.50",
+    "material": "Cotton",
+    "season": "Summer",
+    "gender": "Men",
+    "image_urls": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/433958a0f94b45ec8841ae8600fa1897_9366/Disney_Graphic_Tee_White_HN4519_21_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b41c64ac5bac4ab1a332ae8600fa2078_9366/Disney_Graphic_Tee_White_HN4519_23_hover_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/28a417698a2c4309b64bae8600fa26dd_9366/Disney_Graphic_Tee_White_HN4519_25_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/440ba591cc844740b7b1ae8600fa4eed_9366/Disney_Graphic_Tee_White_HN4519_01_laydown.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c17064949f1848398f6aae8600fa32c4_9366/Disney_Graphic_Tee_White_HN4519_41_detail.jpg"
+    ]
+  },
+  {
+    "product_name": "ADICOLOR NEUCLASSICS TRACK JACKET",
+    "brand": "Addidas",
+    "category": "clothes",
+    "color": "White",
+    "size": ["M", "L", "XL", "XXL"],
+    "price": "₹4 199.50",
+    "material": "Cotton",
+    "season": "Summer",
+    "gender": "Men",
+    "image_urls": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0a290d8393884d67854eae760132d690_9366/Adicolor_Neuclassics_Track_Jacket_Blue_HM1869_21_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/53b467154e0946ecb32dae760132df97_9366/Adicolor_Neuclassics_Track_Jacket_Blue_HM1869_23_hover_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7090f137ede740539616ae76013315df_9366/Adicolor_Neuclassics_Track_Jacket_Blue_HM1869_01_laydown.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5b6ff779cfe843a4846bae760132e7db_9366/Adicolor_Neuclassics_Track_Jacket_Blue_HM1869_25_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ddff357d42de445d9fb3ae760132f2bf_9366/Adicolor_Neuclassics_Track_Jacket_Blue_HM1869_41_detail.jpg"
+    ]
+  },
+  {
+    "product_name": "ARGENTINA 22 WINNERS HOME JERSEY MEN",
+    "brand": "Addidas",
+    "category": "clothes",
+    "color": "White",
+    "size": ["M", "L", "XL", "XXL"],
+    "price": "₹5 299.00",
+    "material": "Cotton",
+    "season": "Summer",
+    "gender": "Men",
+    "image_urls": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b1bf7415379d446c88f5af7200c879f3_9366/Argentina_22_Winners_Home_Jersey_Men_White_IB3597_21_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/af2db509357843edafe5af7200c885d0_9366/Argentina_22_Winners_Home_Jersey_Men_White_IB3597_23_hover_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/cdf8450c5a084717a873af7200c88f58_9366/Argentina_22_Winners_Home_Jersey_Men_White_IB3597_25_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c57bddfd0cb240d8baa2af7001097e68_9366/Argentina_22_Winners_Home_Jersey_Men_White_IB3597_01_laydown.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/67c34858935c4401b25daf700109872e_9366/Argentina_22_Winners_Home_Jersey_Men_White_IB3597_02_laydown.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c6108d577bd24a308fadaf7200c89c72_9366/Argentina_22_Winners_Home_Jersey_Men_White_IB3597_41_detail.jpg"
+    ]
+  },
+  {
+    "product_name": "TENNIS PARIS JACKET",
+    "brand": "Addidas",
+    "category": "clothes",
+    "color": "White",
+    "size": ["M", "L", "XL", "XXL"],
+    "price": "₹9 999.00",
+    "material": "Cotton",
+    "season": "Summer",
+    "gender": "Men",
+    "image_urls": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/20934c4c91ec489e942aafab0123190e_9366/Tennis_Paris_Jacket_Black_HR2186_21_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/012350a8250f4a4a8d30afab01232156_9366/Tennis_Paris_Jacket_Black_HR2186_22_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9a667a99a7ee45d79daaafab01232b0a_9366/Tennis_Paris_Jacket_Black_HR2186_23_hover_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/78ce2c4f3368458d8e4fafab01233591_9366/Tennis_Paris_Jacket_Black_HR2186_25_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/f000f6ac428b412387e2afab01236ae1_9366/Tennis_Paris_Jacket_Black_HR2186_01_laydown.jpg"
+    ]
+  },
+  {
+    "product_name": "LOUNGEWEAR SWEAT PANTS",
+    "brand": "Addidas",
+    "category": "clothes",
+    "color": "White",
+    "size": ["M", "L", "XL", "XXL"],
+    "price": "₹2 799.50",
+    "material": "Cotton",
+    "season": "Summer",
+    "gender": "Women",
+    "image_urls": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a9a8e34f4f85444caaa7aec300ebc601_9366/Loungewear_Sweat_Pants_Grey_HL9147_21_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8cbcacce677c40859f45aec300ebcdfa_9366/Loungewear_Sweat_Pants_Grey_HL9147_23_hover_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3f672ef4c11f412bb53faec300ebd728_9366/Loungewear_Sweat_Pants_Grey_HL9147_25_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c28e8387bc8b44b6a5fbaec300ebf985_9366/Loungewear_Sweat_Pants_Grey_HL9147_01_laydown.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/70e68d70dab840ce990baec300ebe1e1_9366/Loungewear_Sweat_Pants_Grey_HL9147_41_detail.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ddbfdce6ec7b4bf9b1acaec300ebec2a_9366/Loungewear_Sweat_Pants_Grey_HL9147_42_detail.jpg"
+    ]
+  },
+  {
+    "product_name": "ADICOLOR NEUCLASSICS TEE",
+    "brand": "Addidas",
+    "category": "clothes",
+    "color": "White",
+    "size": ["M", "L", "XL", "XXL"],
+    "price": "₹2 799.50",
+    "material": "Cotton",
+    "season": "Summer",
+    "gender": "Women",
+    "image_urls": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8850edc6a3d34db8b159ae9e00c9a2ff_9366/Adicolor_Neuclassics_Tee_Blue_HM1755_21_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d6de03eb2a6b45cb8f24ae9e00c9ad63_9366/Adicolor_Neuclassics_Tee_Blue_HM1755_23_hover_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c49d6b33a60744d0ae4cae9e00c9b681_9366/Adicolor_Neuclassics_Tee_Blue_HM1755_25_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ba91e37cfe994cef8af7ae9f010e56c9_9366/Adicolor_Neuclassics_Tee_Blue_HM1755_01_laydown.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a51c06cb5f6d4a39b652ae9e00c9c124_9366/Adicolor_Neuclassics_Tee_Blue_HM1755_41_detail.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/908c2bef6804496ea06aae9e00c9cebf_9366/Adicolor_Neuclassics_Tee_Blue_HM1755_42_detail.jpg"
+    ]
+  },
+  {
+    "product_name": "TECHFIT TRAINING TEE",
+    "brand": "Addidas",
+    "category": "clothes",
+    "color": "White",
+    "size": ["M", "L", "XL", "XXL"],
+    "price": "₹1 199.50",
+    "material": "Cotton",
+    "season": "Summer",
+    "gender": "Women",
+    "image_urls": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/54d66b76781c4ad1b716ae760116521f_9366/Techfit_Training_Tee_Black_HN9075_21_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3d735856508747098b45ae7601165c7a_9366/Techfit_Training_Tee_Black_HN9075_22_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/329092b8c25f4947acd6ae7601166743_9366/Techfit_Training_Tee_Black_HN9075_23_hover_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/376536bc91714980a948ae7601166e85_9366/Techfit_Training_Tee_Black_HN9075_25_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5d15f82f0075459da627ae760116a896_9366/Techfit_Training_Tee_Black_HN9075_01_laydown.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d997d5fe1c5e4997a374ae7601167c1b_9366/Techfit_Training_Tee_Black_HN9075_41_detail.jpg"
+    ]
+  },
+  {
+    "product_name": "ADICOLOR CLASSICS SST TRACK JACKET",
+    "brand": "Addidas",
+    "category": "clothes",
+    "color": "White",
+    "size": ["M", "L", "XL", "XXL"],
+    "price": "₹6 999.00",
+    "material": "Cotton",
+    "season": "Summer",
+    "gender": "Women",
+    "image_urls": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d72d9921839342b6ab9caf3a00efb198_9366/Adicolor_Classics_SST_Track_Jacket_Red_IB5913_21_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/de1f0d510f2a4976aebeaf3a00efba92_9366/Adicolor_Classics_SST_Track_Jacket_Red_IB5913_23_hover_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/30bde6518a004cf292d0af3a00efc2fe_9366/Adicolor_Classics_SST_Track_Jacket_Red_IB5913_25_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a19c277e415c4fe78671af3a00efee67_9366/Adicolor_Classics_SST_Track_Jacket_Red_IB5913_01_laydown.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b7ba5d628dfc4c22b5bcaf3a00efcfa3_9366/Adicolor_Classics_SST_Track_Jacket_Red_IB5913_41_detail.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/44d8d649a947474c8a15af3a00efdc2b_9366/Adicolor_Classics_SST_Track_Jacket_Red_IB5913_42_detail.jpg"
+    ]
+  },
+  {
+    "product_name": "ALWAYS ORIGINAL SST TRACK JACKET",
+    "brand": "Addidas",
+    "category": "clothes",
+    "color": "White",
+    "size": ["M", "L", "XL", "XXL"],
+    "price": "₹6 999.00",
+    "material": "Cotton",
+    "season": "Summer",
+    "gender": "Women",
+    "image_urls": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bc0d7ca0b1324aae8769af620136e393_9366/Always_Original_SST_Track_Jacket_Blue_IC5580_21_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/6d3df557e8b44de99880af620136ed1d_9366/Always_Original_SST_Track_Jacket_Blue_IC5580_23_hover_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fa3eb6d97c824dc697c5af620136f68a_9366/Always_Original_SST_Track_Jacket_Blue_IC5580_25_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3f67e2e55a594dbe98dbaf5d0102791b_9366/Always_Original_SST_Track_Jacket_Blue_IC5580_01_laydown.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/52d964449ca449af8fc8af6201370b15_9366/Always_Original_SST_Track_Jacket_Blue_IC5580_41_detail.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bcc68f5c3e3d42569450af62013717ad_9366/Always_Original_SST_Track_Jacket_Blue_IC5580_42_detail.jpg"
+    ]
+  },
+  {
+    "product_name": "ADICOLOR 70S BASEBALL CAP",
+    "brand": "Addidas",
+    "category": "hats",
+    "color": "White",
+    "size": ["M", "W"],
+    "price": "₹2 999.00",
+    "material": "Cotton",
+    "season": "Summer",
+    "gender": "all",
+    "image_urls": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0343b804fc29439b96ae9ed79dc90638_9366/Adicolor_70s_Baseball_Cap_White_IL9605_HM1.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/13973ad8c24d49b79f609f7aa969e24c_9366/Adicolor_70s_Baseball_Cap_White_IL9605_HM3_hover.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/544256c9c0b4491b8ec8bb29d1a4b255_9366/Adicolor_70s_Baseball_Cap_White_IL9605_HM4.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c360ec7459a7491ab613517017a38804_9366/Adicolor_70s_Baseball_Cap_White_IL9605_HM5.jpg"
+    ]
+  },
+  {
+    "product_name": "ADICOLOR 70S BASEBALL CAP V2",
+    "brand": "Addidas",
+    "category": "hats",
+    "color": "White",
+    "size": ["M", "W"],
+    "price": "₹2 999.00",
+    "material": "Cotton",
+    "season": "Summer",
+    "gender": "all",
+    "image_urls": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/1fea5a0288f94d60b9c9cce90fb3dc0d_9366/Adicolor_70s_Baseball_Cap_Black_IL9604_HM1.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/35dd860616ef462ead8a9f1ff0e479c9_9366/Adicolor_70s_Baseball_Cap_Black_IL9604_HM3_hover.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/f6501f1e309947979731ccc26d2f9873_9366/Adicolor_70s_Baseball_Cap_Black_IL9604_HM4.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/6b16774712254d1d86edbf35ed22c7d0_9366/Adicolor_70s_Baseball_Cap_Black_IL9604_HM5.jpg"
+    ]
+  },
+  {
+    "product_name": "ADICOLOR 70S BUCKET HAT",
+    "brand": "Addidas",
+    "category": "hats",
+    "color": "White",
+    "size": ["M", "W"],
+    "price": "₹3 999.00",
+    "material": "Cotton",
+    "season": "Summer",
+    "gender": "all",
+    "image_urls": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0550c840231a43449ca639d7a7e4d7df_9366/Adicolor_70s_Bucket_Hat_Black_IL9606_HM1.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/2432c1cf1d16407bacb7b17d03537c87_9366/Adicolor_70s_Bucket_Hat_Black_IL9606_HM3_hover.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c3f6499e85544c4ba35973825ce5de5f_9366/Adicolor_70s_Bucket_Hat_Black_IL9606_HM4.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/911bbca4a88b44ca9d820bdae4ac75ab_9366/Adicolor_70s_Bucket_Hat_Black_IL9606_HM6.jpg"
+    ]
+  },
+  {
+    "product_name": "RUNNING PACKABLE HEAT.RDY X-CITY CAP",
+    "brand": "Addidas",
+    "category": "hats",
+    "color": "White",
+    "size": ["M", "W"],
+    "price": "₹2 999.00",
+    "material": "Cotton",
+    "season": "Summer",
+    "gender": "all",
+    "image_urls": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/1b91f6477b964061ad81af0100fc5cdb_9366/Running_Packable_HEAT.RDY_X-City_Cap_Black_HT4816_01_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/eaeb219fbeb04f56bea0af1700dfe6d1_9366/Running_Packable_HEAT.RDY_X-City_Cap_Black_HT4816_41_detail_hover.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c0f2a7ddfdbf4d409ebeaf1700dff0f4_9366/Running_Packable_HEAT.RDY_X-City_Cap_Black_HT4816_42_detail.jpg"
+    ]
   }
 ]

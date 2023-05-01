@@ -157,6 +157,14 @@ const ConfirmOrder = (props) => {
                 </p>
               </div>
             </div>
+            <div className="w-100 text-end mt-5">
+              <button
+                className="btn btn-outline-dark btn-lg fw-bold px-4 fs-5 py-2 shadow-lg"
+                onClick={handleSubmit}
+              >
+                Confirm <i className="fa fa-check-circle fs-3 ps-2 align-middle"></i>
+              </button>
+            </div>
           </div>
         </div>
       )}

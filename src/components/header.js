@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import data from "./MOCK_DATA.json";
 import { Link, Outlet } from "react-router-dom";
+import { useCookies } from "react-cookie";
+import toast, { Toaster } from "react-hot-toast";
 
 const searchToggle = {
   position: "fixed",
@@ -17,6 +19,7 @@ const searchToggle = {
 
 const Header = (props) => {
   const [stoggle, setToggle] = useState(false);
+  const [cookies, setCookie, removeCookie] = useCookies(["uToken"]);
 
   const [search, setSearch] = useState("");
 
@@ -30,6 +33,7 @@ const Header = (props) => {
 
   return (
     <>
+      <Toaster />
       {console.log(cart)}
       <nav className="navbar navbar-expand-lg navbar-light bg-light py-lg-4 shadow-lg px-lg-3">
         <div className="container-fluid d-flex justify-content-between">
@@ -45,9 +49,9 @@ const Header = (props) => {
             >
               <span className="navbar-toggler-icon"></span>
             </button>
-            <a className="navbar-brand" href="#">
-              Navbar
-            </a>
+            <Link to="/" className="navbar-brand fs-4 ps-3 pt-5 pb-0 align-middle">
+              Fashionista .
+            </Link>
           </div>
           <div className="collapse navbar-collapse w-100 " id="navbarSupportedContent">
             <ul className="navbar-nav  mb-2 mb-lg-0 mx-auto">
@@ -62,7 +66,7 @@ const Header = (props) => {
               </li>
               <li className="nav-item">
                 <Link
-                  to="/all-products/all/all"
+                  to="/all-products/all/all/all"
                   className={`nav-link ${cPage == "Shop All" ? "active" : ""}`}
                   onClick={() => setPage("Shop All")}
                 >
@@ -71,16 +75,16 @@ const Header = (props) => {
               </li>
               <li className="nav-item">
                 <Link
-                  to="/all-products/all/all"
-                  className={`nav-link ${cPage == "Accessories" ? "active" : ""}`}
-                  onClick={() => setPage("Accessories")}
+                  to="/all-products/all/all/Shoes"
+                  className={`nav-link ${cPage == "Shoes" ? "active" : ""}`}
+                  onClick={() => setPage("Shoes")}
                 >
-                  Accessories
+                  Shoes
                 </Link>
               </li>
               <li className="nav-item">
                 <Link
-                  to="/all-products/all/all"
+                  to="/all-products/all/all/clothes"
                   className={`nav-link ${cPage == "Hoodies" ? "active" : ""}`}
                   onClick={() => setPage("Hoodies")}
                 >
@@ -89,7 +93,7 @@ const Header = (props) => {
               </li>
               <li className="nav-item">
                 <Link
-                  to="/all-products/all/all"
+                  to="/all-products/all/all/hats"
                   className={`nav-link ${cPage == "Hats" ? "active" : ""}`}
                   onClick={() => setPage("Hats")}
                 >
@@ -98,7 +102,7 @@ const Header = (props) => {
               </li>
               <li className="nav-item">
                 <Link
-                  to="/all-products/all/all"
+                  to="/all-products/all/all/clothes"
                   className={`nav-link ${cPage == "TP" ? "active" : ""}`}
                   onClick={() => setPage("TP")}
                 >
@@ -132,7 +136,39 @@ const Header = (props) => {
                 <i className="fa fa-shopping-bag" style={{ cursor: "pointer" }}></i>
               </Link>
             </div>
-            <i className="fa fa-user mx-4" style={{ cursor: "pointer" }}></i>
+            {cookies.uToken !== undefined && (
+              <i
+                className="fa fa-sign-out mx-4"
+                onClick={() =>
+                  toast((t) => (
+                    <span>
+                      <b>Log Out? </b>
+                      <a
+                        className="btn bg-info text-light  mx-2"
+                        onClick={() => {
+                          removeCookie("uToken");
+                          toast.dismiss(t.id);
+                        }}
+                      >
+                        <i className="fa fa-check"></i>
+                      </a>
+                      <a className="btn bg-dark text-light" onClick={() => toast.dismiss(t.id)}>
+                        <i className="fa fa-times"></i>
+                      </a>
+                    </span>
+                  ))
+                }
+                style={{ cursor: "pointer" }}
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Logout"
+              ></i>
+            )}
+            {cookies.uToken == undefined && (
+              <Link to="/user" className="link text-dark">
+                <i className="fa fa-user mx-4" style={{ cursor: "pointer" }}></i>
+              </Link>
+            )}
             <i
               className="fa fa-search"
               onClick={() => setToggle(!stoggle)}
@@ -168,7 +204,7 @@ const Header = (props) => {
               {data.map((pini, i) => {
                 if (pini.product_name.toLowerCase().includes(search) && search.length !== 0) {
                   return (
-                    <Link to={`/product/${i}/all`} className="link">
+                    <Link to={`/product/${i}/all/all`} className="link">
                       <div
                         className="sBox text-dark bg-light w-100 mx-auto d-flex align-items-center justify-content-between p-3 border border-1"
                         onClick={() => setToggle(!stoggle)}

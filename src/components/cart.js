@@ -3,7 +3,7 @@ import { Outlet, Link, useLocation } from "react-router-dom";
 
 const Cart = (props) => {
   const [cart, getCart] = useState(
-    localStorage.getItem("cart") !== null ? JSON.parse(localStorage.getItem("cart")) : {}
+    localStorage.getItem("cart") !== null ? JSON.parse(localStorage.getItem("cart")) : []
   );
   let priceString = 0;
   let TotalPrice = "";

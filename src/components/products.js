@@ -19,6 +19,7 @@ const AllProds = (props) => {
   const [curnProd, setCurrenProd] = useState({
     id: params.id !== "all" ? params.id : "all",
     category: params.cat !== "all" ? params.cat : "all",
+    type: params.type !== "all" ? params.type : "all",
   });
 
   useEffect(() => {
@@ -26,6 +27,7 @@ const AllProds = (props) => {
       ...curnProd,
       id: params.id !== "all" ? params.id : "all",
       category: params.cat !== "all" ? params.cat : "all",
+      type: params.type !== "all" ? params.type : "all",
     });
   }, [params]);
 
@@ -52,7 +54,11 @@ const AllProds = (props) => {
         <div className="row">
           {products
             .filter((e) =>
-              curnProd.category !== "all" ? e.gender == curnProd.category : (e.gender = e.gender)
+              curnProd.category !== "all"
+                ? e.gender == curnProd.category && e.category == curnProd.type
+                : curnProd.type !== "all"
+                ? e.gender == e.gender && e.category == curnProd.type
+                : e.gender == e.gender
             )
             .map((ini, i) => {
               if (ini.product_name.toLowerCase().includes(search)) {
@@ -62,6 +68,7 @@ const AllProds = (props) => {
                       key={i}
                       id={i}
                       record={ini}
+                      type={ini.category}
                       category={curnProd.category}
                       ogs={props.og}
                       checks={(e) => props.check(e)}

@@ -50,49 +50,61 @@ const Carousel = (props) => {
             <div className="carousel-item active">
               <img src="assets/imgs/1.jpg" className="d-block" alt="..." />
               <div className="carousel-caption  d-md-block">
-                <h5 className="fs-1 fw-bold">Third slide label</h5>
-                <p className="lead">Some representative placeholder content for the third slide.</p>
-                <button className="btn btn-light px-3 py-2 fs-5 shadow-lg">Explore More</button>
+                <h5 className="fs-1 fw-bold">New Sneakers</h5>
+                <p className="lead">Checkout newest Sneakers</p>
+                <Link
+                  to="/all-products/all/all/Shoes"
+                  className="btn btn-light px-3 py-2 fs-5 shadow-lg"
+                >
+                  Explore More
+                </Link>
               </div>
             </div>
             <div className="carousel-item">
               <img src="assets/imgs/2.jpg" className="d-block" alt="..." />
               <div className="carousel-caption  d-md-block">
-                <h5 className="fs-1 fw-bold">Third slide label</h5>
-                <p className="lead">Some representative placeholder content for the third slide.</p>
-                <button className="btn btn-light px-3 py-2 fs-5 shadow-lg">Explore More</button>
+                <h5 className="fs-1 fw-bold">Feel Empowered</h5>
+                <p className="lead">Checkout the trendiest looks for Women.</p>
+                <Link
+                  to="/all-products/all/Women/clothes"
+                  className="btn btn-light px-3 py-2 fs-5 shadow-lg"
+                >
+                  Explore More
+                </Link>
               </div>
             </div>
             <div className="carousel-item">
               <img src="assets/imgs/3.jpg" className="d-block" alt="..." />
               <div className="carousel-caption  d-md-block">
-                <h5 className="fs-1 fw-bold">Third slide label</h5>
-                <p className="lead">Some representative placeholder content for the third slide.</p>
-                <button className="btn btn-light px-3 py-2 fs-5 shadow-lg">Explore More</button>
+                <h5 className="fs-1 fw-bold">
+                  <em>THE CASUALS</em>
+                </h5>
+                <p className="lead">Checkout the newest in Casuals collection.</p>
+                <Link
+                  to="/all-products/all/all/clothes"
+                  className="btn btn-light px-3 py-2 fs-5 shadow-lg"
+                >
+                  Explore More
+                </Link>
               </div>
             </div>
-            <div className="carousel-item">
-              <img src="assets/imgs/4.jpg" className="d-block" alt="..." />
-              <div className="carousel-caption  d-md-block">
-                <h5 className="fs-1 fw-bold">Third slide label</h5>
-                <p className="lead">Some representative placeholder content for the third slide.</p>
-                <button className="btn btn-light px-3 py-2 fs-5 shadow-lg">Explore More</button>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <img src="assets/imgs/5.jpg" className="d-block" alt="..." />
-              <div className="carousel-caption  d-md-block">
-                <h5 className="fs-1 fw-bold">Third slide label</h5>
-                <p className="lead">Some representative placeholder content for the third slide.</p>
-                <button className="btn btn-light px-3 py-2 fs-5 shadow-lg">Explore More</button>
-              </div>
-            </div>
+
             <div className="carousel-item">
               <img src="assets/imgs/6.jpg" className="d-block" alt="..." />
               <div className="carousel-caption d-block">
-                <h5 className="fs-1 fw-bold">Third slide label</h5>
-                <p className="lead">Some representative placeholder content for the third slide.</p>
-                <button className="btn btn-light px-3 py-2 fs-5 shadow-lg">Explore More</button>
+                <h5 className="fs-1 fw-bold">
+                  <strong>THE</strong>{" "}
+                  <span className="bg-warning px-2 rounded text-dark">
+                    <em>ADD-ONS</em>
+                  </span>
+                </h5>
+
+                <Link
+                  to="/all-products/all/all/hats"
+                  className="btn btn-light px-3 py-2 fs-5 shadow-lg"
+                >
+                  Explore More
+                </Link>
               </div>
             </div>
           </div>
@@ -156,7 +168,7 @@ const Carousel = (props) => {
               IN WOMEN FASHION
             </h4>
             <Link
-              to="/all-products/all/Women"
+              to="/all-products/all/Women/all"
               className="btn btn-outline-warning px-3 py-2 fs-4 shadow-lg fw-bold"
             >
               Discover More

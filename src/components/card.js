@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Card = (props) => {
+  const [mouse, setMouse] = useState(0);
+
   function handleCart(e) {
     if (localStorage.getItem("cart") !== null) {
       let newItem = {
@@ -34,12 +36,18 @@ const Card = (props) => {
   }
 
   return (
-    <div className="card border-0 shadow">
-      <Link to={`/product/${props.id}/${props.category}`} className="link">
-        <img src={props.record.image_urls[0]} className="card-img-top" alt="..." />
+    <div className="card border-0 shadow h-100">
+      <Link to={`/product/${props.id}/${props.category}/${props.type}`} className="link">
+        <img
+          src={props.record.image_urls[mouse]}
+          className="card-img-top"
+          alt="..."
+          onMouseEnter={() => setMouse(1)}
+          onMouseLeave={() => setMouse(0)}
+        />
       </Link>
       <div className="card-body">
-        <Link to={`/product/${props.id}/${props.category}`} className="link">
+        <Link to={`/product/${props.id}/${props.category}/${props.type}`} className="link">
           <h5 className="card-title fw-bold text-dark">{props.record.product_name}</h5>
 
           <h6 className="text-dark">{props.record.brand}</h6>
@@ -55,7 +63,7 @@ const Card = (props) => {
           </button>
 
           <Link
-            to={`/product/${props.id}/${props.category}`}
+            to={`/product/${props.id}/${props.category}/${props.type}`}
             className="btn btn-dark w-100 rounded-0 rounded-end"
           >
             Buy Now

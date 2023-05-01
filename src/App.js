@@ -6,6 +6,7 @@ import Cart from "./components/cart";
 import AllProds from "./components/products";
 import ConfirmOrder from "./components/confirm";
 import "./components/master.css";
+import User from "./components/user";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/header";
@@ -20,11 +21,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Main check={(e) => setChk(e)} og={chk} />} />
           <Route
-            path="/product/:id/:cat"
+            path="/product/:id/:cat/:type"
             element={<ProdView check={(e) => setChk(e)} og={chk} />}
           />
           <Route
-            path="/all-products/:id/:cat"
+            path="/all-products/:id/:cat/:type"
             element={<AllProds check={(e) => setChk(e)} og={chk} />}
           />
           <Route
@@ -33,6 +34,7 @@ function App() {
           />
 
           <Route path="/cart" element={<Cart check={(e) => setChk(e)} og={chk} />} />
+          <Route path="/user" element={<User check={(e) => setChk(e)} og={chk} />} />
         </Routes>
       </Router>
     </>

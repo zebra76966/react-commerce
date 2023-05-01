@@ -10,6 +10,7 @@ const ProdView = (props) => {
   const [curnProd, setCurrenProd] = useState({
     id: params.id !== "all" ? params.id : 0,
     category: params.cat !== "all" ? params.cat : "all",
+    type: params.type !== "all" ? params.type : "all",
   });
   const { pathname } = useLocation();
 
@@ -22,6 +23,7 @@ const ProdView = (props) => {
       ...curnProd,
       id: params.id !== "all" ? params.id : 0,
       category: params.cat !== "all" ? params.cat : "all",
+      type: params.type !== "all" ? params.type : "all",
     });
   }, [params]);
 
@@ -70,7 +72,11 @@ const ProdView = (props) => {
         <div className="col-12 col-lg-7">
           {products
             .filter((e) =>
-              curnProd.category !== "all" ? e.gender == curnProd.category : e.gender == e.gender
+              curnProd.category !== "all"
+                ? e.gender == curnProd.category && e.category == curnProd.type
+                : curnProd.type !== "all"
+                ? e.gender == e.gender && e.category == curnProd.type
+                : e.gender == e.gender
             )
             .map((ini, i) => {
               if (i == curnProd.id) {
@@ -81,7 +87,11 @@ const ProdView = (props) => {
             <div className="imageGrid  bg-white">
               {products
                 .filter((e) =>
-                  curnProd.category !== "all" ? e.gender == curnProd.category : e.gender == e.gender
+                  curnProd.category !== "all"
+                    ? e.gender == curnProd.category && e.category == curnProd.type
+                    : curnProd.type !== "all"
+                    ? e.gender == e.gender && e.category == curnProd.type
+                    : e.gender == e.gender
                 )
                 [curnProd.id].image_urls.map((kini, j) => {
                   return (
@@ -102,7 +112,11 @@ const ProdView = (props) => {
         <div className="col-12 col-lg-5 py-lg-3 py-5">
           {products
             .filter((e) =>
-              curnProd.category !== "all" ? e.gender == curnProd.category : e.gender == e.gender
+              curnProd.category !== "all"
+                ? e.gender == curnProd.category && e.category == curnProd.type
+                : curnProd.type !== "all"
+                ? e.gender == e.gender && e.category == curnProd.type
+                : e.gender == e.gender
             )
             .map((ini, i) => {
               if (i == curnProd.id) {
@@ -177,7 +191,11 @@ const ProdView = (props) => {
 
         {products
           .filter((e) =>
-            curnProd.category !== "all" ? e.gender == curnProd.category : e.gender == e.gender
+            curnProd.category !== "all"
+              ? e.gender == curnProd.category && e.category == curnProd.type
+              : curnProd.type !== "all"
+              ? e.gender == e.gender && e.category == curnProd.type
+              : e.gender == e.gender
           )
           .slice(0, 3)
           .map((ini, i) => {
@@ -189,6 +207,7 @@ const ProdView = (props) => {
                   record={ini}
                   category={curnProd.category}
                   ogs={props.og}
+                  type={curnProd.type}
                   checks={(e) => props.check(e)}
                 />
               </div>
