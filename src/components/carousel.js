@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, Outlet } from "react-router-dom";
 
 const Carousel = (props) => {
   return (
@@ -48,7 +49,7 @@ const Carousel = (props) => {
           <div className="carousel-inner h-100">
             <div className="carousel-item active">
               <img src="assets/imgs/1.jpg" className="d-block" alt="..." />
-              <div className="carousel-caption d-none d-md-block">
+              <div className="carousel-caption  d-md-block">
                 <h5 className="fs-1 fw-bold">Third slide label</h5>
                 <p className="lead">Some representative placeholder content for the third slide.</p>
                 <button className="btn btn-light px-3 py-2 fs-5 shadow-lg">Explore More</button>
@@ -56,7 +57,7 @@ const Carousel = (props) => {
             </div>
             <div className="carousel-item">
               <img src="assets/imgs/2.jpg" className="d-block" alt="..." />
-              <div className="carousel-caption d-none d-md-block">
+              <div className="carousel-caption  d-md-block">
                 <h5 className="fs-1 fw-bold">Third slide label</h5>
                 <p className="lead">Some representative placeholder content for the third slide.</p>
                 <button className="btn btn-light px-3 py-2 fs-5 shadow-lg">Explore More</button>
@@ -64,7 +65,7 @@ const Carousel = (props) => {
             </div>
             <div className="carousel-item">
               <img src="assets/imgs/3.jpg" className="d-block" alt="..." />
-              <div className="carousel-caption d-none d-md-block">
+              <div className="carousel-caption  d-md-block">
                 <h5 className="fs-1 fw-bold">Third slide label</h5>
                 <p className="lead">Some representative placeholder content for the third slide.</p>
                 <button className="btn btn-light px-3 py-2 fs-5 shadow-lg">Explore More</button>
@@ -72,7 +73,7 @@ const Carousel = (props) => {
             </div>
             <div className="carousel-item">
               <img src="assets/imgs/4.jpg" className="d-block" alt="..." />
-              <div className="carousel-caption d-none d-md-block">
+              <div className="carousel-caption  d-md-block">
                 <h5 className="fs-1 fw-bold">Third slide label</h5>
                 <p className="lead">Some representative placeholder content for the third slide.</p>
                 <button className="btn btn-light px-3 py-2 fs-5 shadow-lg">Explore More</button>
@@ -80,7 +81,7 @@ const Carousel = (props) => {
             </div>
             <div className="carousel-item">
               <img src="assets/imgs/5.jpg" className="d-block" alt="..." />
-              <div className="carousel-caption d-none d-md-block">
+              <div className="carousel-caption  d-md-block">
                 <h5 className="fs-1 fw-bold">Third slide label</h5>
                 <p className="lead">Some representative placeholder content for the third slide.</p>
                 <button className="btn btn-light px-3 py-2 fs-5 shadow-lg">Explore More</button>
@@ -88,7 +89,7 @@ const Carousel = (props) => {
             </div>
             <div className="carousel-item">
               <img src="assets/imgs/6.jpg" className="d-block" alt="..." />
-              <div className="carousel-caption d-none d-md-block">
+              <div className="carousel-caption d-block">
                 <h5 className="fs-1 fw-bold">Third slide label</h5>
                 <p className="lead">Some representative placeholder content for the third slide.</p>
                 <button className="btn btn-light px-3 py-2 fs-5 shadow-lg">Explore More</button>
@@ -154,13 +155,17 @@ const Carousel = (props) => {
               NEW <span className="d-block bg-warning text-white rounded ">ARRIVALS</span>
               IN WOMEN FASHION
             </h4>
-            <button className="btn btn-outline-warning px-3 py-2 fs-4 shadow-lg fw-bold">
+            <Link
+              to="/all-products/all/Women"
+              className="btn btn-outline-warning px-3 py-2 fs-4 shadow-lg fw-bold"
+            >
               Discover More
               <i className="fa fa-globe ps-2"></i>
-            </button>
+            </Link>
           </div>
         </div>
       )}
+      <Outlet />
     </>
   );
 };

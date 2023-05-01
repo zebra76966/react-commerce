@@ -121,7 +121,7 @@ a {
 }
 
 .suggestionBox {
-  height: 150px;
+  height: 300px;
   overflow: auto;
   white-space: nowrap;
 }

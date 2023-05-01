@@ -44,10 +44,10 @@ const Main = (props) => {
               );
             })}
           <div className="col-12 my-3 d-flex justify-content-end">
-            <button className="btn btn-lg btn-dark border-0  shadow-lg">
+            <Link to="/all-products/all/Men" className="btn btn-lg btn-dark border-0  shadow-lg">
               Show More
               <i className="fa fa-chevron-right ps-3 align-middle" />
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -80,10 +80,10 @@ const Main = (props) => {
               );
             })}
           <div className="col-12 my-3 d-flex justify-content-end">
-            <button className="btn btn-lg btn-dark border-0  shadow-lg">
+            <Link to="/all-products/all/Women" className="btn btn-lg btn-dark border-0  shadow-lg">
               Show More
               <i className="fa fa-chevron-right ps-3 align-middle" />
-            </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -3,7 +3,9 @@ import "./App.css";
 import Main from "./components/main";
 import ProdView from "./components/itemView";
 import Cart from "./components/cart";
+import AllProds from "./components/products";
 import "./components/master.css";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/header";
 import { useState } from "react";
@@ -20,6 +22,11 @@ function App() {
             path="/product/:id/:cat"
             element={<ProdView check={(e) => setChk(e)} og={chk} />}
           />
+          <Route
+            path="/all-products/:id/:cat"
+            element={<AllProds check={(e) => setChk(e)} og={chk} />}
+          />
+
           <Route path="/cart" element={<Cart check={(e) => setChk(e)} og={chk} />} />
         </Routes>
       </Router>

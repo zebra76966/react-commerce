@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import data from "./MOCK_DATA.json";
-import { useParams, useLocation } from "react-router-dom";
+import { useParams, useLocation, Link, Outlet } from "react-router-dom";
 import Card from "./card";
 const ProdView = (props) => {
   const params = useParams();
@@ -163,7 +163,9 @@ const ProdView = (props) => {
         </div>
 
         {products
-          .filter((e) => e.gender == curnProd.category)
+          .filter((e) =>
+            curnProd.category !== "all" ? e.gender == curnProd.category : e.gender == e.gender
+          )
           .slice(0, 3)
           .map((ini, i) => {
             return (
@@ -180,12 +182,13 @@ const ProdView = (props) => {
             );
           })}
         <div className="col-12 my-3 d-flex justify-content-end">
-          <button className="btn btn-lg btn-dark border-0  shadow-lg">
+          <Link to="/all-products/all/all" className="btn btn-lg btn-dark border-0  shadow-lg">
             Show More
             <i className="fa fa-chevron-right ps-3 align-middle" />
-          </button>
+          </Link>
         </div>
       </div>
+      <Outlet />
     </div>
   );
 };
