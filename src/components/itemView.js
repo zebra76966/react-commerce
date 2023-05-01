@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import data from "./MOCK_DATA.json";
-import { useParams, useLocation, Link, Outlet } from "react-router-dom";
+import { useParams, useLocation, Link, Outlet, location } from "react-router-dom";
 import Card from "./card";
 const ProdView = (props) => {
   const params = useParams();
@@ -37,7 +37,7 @@ const ProdView = (props) => {
     color: "white",
   };
 
-  function handleCart(e, id) {
+  function handleCart(e, id, br) {
     let itemsArr = {
       itemPrice: e.price,
       itemId: id,
@@ -51,9 +51,15 @@ const ProdView = (props) => {
 
       localStorage.setItem("cart", JSON.stringify(arr));
       props.check(!props.og);
+      if (br == "bn") {
+        window.location.href = "/confirm-order";
+      }
     } else if (localStorage.getItem("cart") == null) {
       localStorage.setItem("cart", JSON.stringify([itemsArr]));
       props.check(!props.og);
+      if (br == "bn") {
+        window.location.href = "/confirm-order";
+      }
     }
   }
 
@@ -137,17 +143,24 @@ const ProdView = (props) => {
                           //   itemName: ini.product_name,
                           //   itemThumb: ini.image_urls[0],
                           // });
+                          let vr = "ct";
 
-                          handleCart(ini, i);
+                          handleCart(ini, i, vr);
                         }}
                         className="btn btn-outline-dark fw-bold w-100 rounded-0 fs-4 rounded-start py-2"
                       >
                         Cart <i className="ms-1 fa fa-plus-circle"></i>
                       </button>
 
-                      <a href="#" className="btn btn-dark w-100 rounded-0 fs-4 rounded-end py-2">
+                      <button
+                        onClick={() => {
+                          let vr = "bn";
+                          handleCart(ini, i, vr);
+                        }}
+                        className="btn btn-dark w-100 rounded-0 fs-4 rounded-end py-2"
+                      >
                         Buy Now
-                      </a>
+                      </button>
                     </div>
                   </div>
                 );

@@ -9,7 +9,9 @@ const searchToggle = {
   display: "flex",
   alignItems: "center",
   backdropFilter: "blur(10px)",
-  zIndex: "99",
+  zIndex: "199",
+  top: "0",
+  left: "0",
   transition: "all 0.5s ease-in-out",
 };
 
@@ -111,21 +113,22 @@ const Header = (props) => {
           text-dark fs-4 position-absolute end-0 top-0 mt-3 mt-lg-4 pe-4 align-items-center"
           >
             <div className="position-relative ">
-              {cart !== null && (
-                <span
-                  className="position-absolute bg-warning text-light rounded-circle fw-bold top-0 border-1 border-light"
-                  style={{
-                    height: "20px",
-                    width: "20px",
-                    textAlign: "center",
-                    right: "-10px",
-                    fontSize: "14px",
-                  }}
-                >
-                  {cart.length < 10 ? cart.length : `9+`}
-                </span>
-              )}
               <Link to="/cart" className="link text-dark">
+                {cart !== null && (
+                  <span
+                    className="position-absolute bg-warning text-light rounded-circle fw-bold top-0 border-1 border-light"
+                    style={{
+                      height: "20px",
+                      width: "20px",
+                      textAlign: "center",
+                      right: "-10px",
+                      fontSize: "14px",
+                    }}
+                  >
+                    {cart.length < 10 ? cart.length : `9+`}
+                  </span>
+                )}
+
                 <i className="fa fa-shopping-bag" style={{ cursor: "pointer" }}></i>
               </Link>
             </div>

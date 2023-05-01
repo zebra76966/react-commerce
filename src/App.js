@@ -4,6 +4,7 @@ import Main from "./components/main";
 import ProdView from "./components/itemView";
 import Cart from "./components/cart";
 import AllProds from "./components/products";
+import ConfirmOrder from "./components/confirm";
 import "./components/master.css";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -25,6 +26,10 @@ function App() {
           <Route
             path="/all-products/:id/:cat"
             element={<AllProds check={(e) => setChk(e)} og={chk} />}
+          />
+          <Route
+            path="/confirm-order"
+            element={<ConfirmOrder check={(e) => setChk(e)} og={chk} />}
           />
 
           <Route path="/cart" element={<Cart check={(e) => setChk(e)} og={chk} />} />
