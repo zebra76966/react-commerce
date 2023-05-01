@@ -1,7 +1,7 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
 
 const ConfirmOrder = (props) => {
   const [cart, getCart] = useState(
@@ -12,6 +12,11 @@ const ConfirmOrder = (props) => {
 
   const [loading, setLoad] = useState(false);
   const [comp, setComp] = useState(false);
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   function handleSubmit() {
     setLoad(true);
@@ -123,6 +128,7 @@ const ConfirmOrder = (props) => {
                           newarr.splice(i, 1);
                           localStorage.setItem("cart", JSON.stringify(newarr));
                           getCart(newarr);
+                          props.check(!props.og);
                         }}
                       >
                         <i className="fa fa-trash vertical-middle"></i>

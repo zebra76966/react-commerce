@@ -1,12 +1,18 @@
-import React, { useState } from "react";
-import { Outlet, Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Outlet, Link, useLocation } from "react-router-dom";
 
-const Cart = () => {
+const Cart = (props) => {
   const [cart, getCart] = useState(
     localStorage.getItem("cart") !== null ? JSON.parse(localStorage.getItem("cart")) : {}
   );
   let priceString = 0;
   let TotalPrice = "";
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <>
       <div style={{ marginTop: "100px" }} data-aos="fade-up">
@@ -33,6 +39,7 @@ const Cart = () => {
                           newarr.splice(i, 1);
                           localStorage.setItem("cart", JSON.stringify(newarr));
                           getCart(newarr);
+                          props.check(!props.og);
                         }}
                       >
                         <i className="fa fa-trash vertical-middle"></i>
