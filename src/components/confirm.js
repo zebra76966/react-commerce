@@ -13,12 +13,19 @@ const ConfirmOrder = (props) => {
   const [loading, setLoad] = useState(false);
   const [comp, setComp] = useState(false);
   const { pathname } = useLocation();
+  const [udata, setUdata] = useState({
+    uaddress: "",
+    uemail: localStorage.getItem("fuserMail"),
+    uname: localStorage.getItem("fUserName"),
+    uphone: "",
+  });
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-  function handleSubmit() {
+  function handleSubmit(e) {
+    e.preventDefault();
     setLoad(true);
     // Axios Goes Here For email to the merchant
     let tableHtml =
@@ -40,15 +47,17 @@ const ConfirmOrder = (props) => {
     // create the user info HTML
     let userHtml =
       "<p>User Name: " +
-      "Rohit Sharma" +
+      udata.uname +
       "</p>" +
       "<p>Email: " +
-      "userInfo.email" +
+      udata.uemail +
       "</p>" +
       "<p>Address: " +
-      "userInfo.address" +
+      udata.uaddress +
+      "</p>" +
+      "<p>Phone: " +
+      udata.uphone +
       "</p>";
-
     // combine the user info and table HTML into a single HTML string
     let messageHtml = userHtml + tableHtml;
 
@@ -69,6 +78,7 @@ const ConfirmOrder = (props) => {
           setLoad(false);
           setComp(true);
           localStorage.removeItem("cart");
+          props.check(!props.og);
           getCart([]);
         },
         (error) => {
@@ -102,15 +112,60 @@ const ConfirmOrder = (props) => {
         </div>
       )}
       {cart !== undefined && cart.length !== 0 && (
-        <div style={{ marginTop: "100px" }} data-aos="zoom-in">
+        <form style={{ marginTop: "100px" }} data-aos="zoom-in" onSubmit={handleSubmit}>
           <div className="container my-5 py-5">
             <h5 className="display-5 mx-auto">
               Confirm <span className="bg-dark text-light px-2 rounded">Order</span>
             </h5>
+            {/* Form Start */}
+            <h3 className="fw-bold mt-5 pt-5">Recipient Details</h3>
+
+            <hr />
+            <div className="col-12">
+              <label for="Address" className="form-label">
+                Address
+              </label>
+              <textarea
+                rows="4"
+                cols="50"
+                className="form-control bg-light text-dark shadow border-0 p-3 w-100"
+                id="Address"
+                autoComplete="Address"
+                placeholder="H-20 Sth ST."
+                value={udata.uaddress}
+                onChange={(e) => setUdata({ ...udata, uaddress: e.target.value })}
+                required
+              />
+            </div>
+            <div className="col-12 my-3">
+              <label for="Phone" className="form-label">
+                Phone
+              </label>
+              <input
+                type="number"
+                className="form-control bg-light text-dark shadow border-0 p-3"
+                id="Phone"
+                autoComplete="Phone"
+                placeholder="Minimum 10 Digits"
+                value={udata.uphone}
+                min={1111111111}
+                max={9999999999}
+                onChange={(e) => setUdata({ ...udata, uphone: e.target.value })}
+                required
+              />
+            </div>
+            {udata.uphone.toString().length < 10 ||
+              (udata.uphone.toString().length > 10 && (
+                <span className="bg-warning text-dark p-3 rounded my-5">
+                  Phone Number should be atleast 10 digits
+                </span>
+              ))}
+            {/* Form End */}
+
             {cart.map((ini, i) => {
               return (
                 <>
-                  <div className="row text-dark text-center">
+                  <div className="row text-dark text-center mt-5">
                     <div className="col-3 d-flex align-items-center ps-0">
                       <img src={ini.itemThumb} className="img-fluid " />
                     </div>
@@ -160,13 +215,13 @@ const ConfirmOrder = (props) => {
             <div className="w-100 text-end mt-5">
               <button
                 className="btn btn-outline-dark btn-lg fw-bold px-4 fs-5 py-2 shadow-lg"
-                onClick={handleSubmit}
+                type="submit"
               >
                 Confirm <i className="fa fa-check-circle fs-3 ps-2 align-middle"></i>
               </button>
             </div>
           </div>
-        </div>
+        </form>
       )}
 
       {cart.length == 0 && (

@@ -50,7 +50,7 @@ const SignUp = () => {
       {isLoading && (
         <div className="loader">
           <div className="border border-1 border-dark p-4 rounded shadow-lg">
-            <img src="assets/imgs/loader.gif" className="img-fluid" />
+            <img src="/assets/imgs/loader.gif" className="img-fluid" />
             <h5 className="text-dark fw-bold text-center">PROCESSING</h5>
           </div>
         </div>
@@ -122,7 +122,7 @@ const SignUp = () => {
             <p className="lead">
               Already have an Account?
               <Link
-                to="/user"
+                to="/user/main"
                 state={{ check: "Login" }}
                 className="link-info text-decoration-none fw-bold"
               >

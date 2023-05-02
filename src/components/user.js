@@ -5,12 +5,14 @@ import SignUp from "./signup";
 import Login from "./login";
 
 import { useCookies } from "react-cookie";
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 
 import Axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 
 const User = () => {
+  const params = useParams();
+
   const location = useLocation();
   const { check } = !location.state ? "login" : location.state;
 
@@ -31,6 +33,9 @@ const User = () => {
           // response.data=="ok"?setVerified(true):setVerified(false);
           if (response.data.token !== undefined) {
             setCookie("uToken", response.data.token, { path: "/" });
+            console.log(response.data);
+            localStorage.setItem("fUserName", response.data.userName);
+            localStorage.setItem("fuserMail", response.data.userEmail);
             setVerified(true);
             toast.success("Success");
           } else if (
@@ -54,16 +59,20 @@ const User = () => {
   }, [cookies.uToken]);
 
   const [elog, setElog] = useState(false);
-
+  console.log(params.red);
   if (isverified) {
-    window.location.href = "/cart";
+    if (params.red !== "main") {
+      window.location.href = `/${params.red}`;
+    } else {
+      window.location.href = `/cart`;
+    }
   }
   return (
     <>
       {isLoading && (
         <div className="loader">
           <div className="border border-1 border-dark p-4 rounded shadow-lg">
-            <img src="assets/imgs/loader.gif" className="img-fluid" />
+            <img src="/assets/imgs/loader.gif" className="img-fluid" />
             <h5 className="text-dark fw-bold text-center">PROCESSING</h5>
           </div>
         </div>

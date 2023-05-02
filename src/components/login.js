@@ -5,7 +5,7 @@ import { useCookies } from "react-cookie";
 import { Outlet, Link } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
 const Login = () => {
-  document.title = "ExamWiz-Login";
+  document.title = "User-Login";
 
   const [cookies, setCookie, removeCookie] = useCookies(["uToken"]);
   const [response, setResponse] = useState([]);
@@ -50,7 +50,7 @@ const Login = () => {
       {isLoading && (
         <div className="loader">
           <div className="border border-1 border-dark p-4 rounded shadow-lg">
-            <img src="assets/imgs/loader.gif" className="img-fluid" />
+            <img src="/assets/imgs/loader.gif" className="img-fluid" />
             <h5 className="text-dark fw-bold text-center">PROCESSING</h5>
           </div>
         </div>
@@ -104,7 +104,7 @@ const Login = () => {
             <p className="lead">
               Don't have an Account?
               <Link
-                to="/user"
+                to="/user/main"
                 state={{ check: "SignUp" }}
                 className="link-info text-decoration-none fw-bold"
               >

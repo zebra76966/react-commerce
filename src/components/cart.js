@@ -70,7 +70,7 @@ const Cart = (props) => {
             </div>
             <div className="w-100 text-end mt-5">
               <Link
-                to="/confirm-order"
+                to="/user/confirm-order"
                 className="btn btn-outline-dark btn-lg fw-bold px-4 fs-5 py-2 shadow-lg"
               >
                 Checkout <i className="fa fa-arrow-circle-right fs-3 ps-2 align-middle"></i>

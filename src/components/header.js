@@ -142,19 +142,31 @@ const Header = (props) => {
                 onClick={() =>
                   toast((t) => (
                     <span>
-                      <b>Log Out? </b>
-                      <a
-                        className="btn bg-info text-light  mx-2"
-                        onClick={() => {
-                          removeCookie("uToken");
-                          toast.dismiss(t.id);
-                        }}
-                      >
-                        <i className="fa fa-check"></i>
-                      </a>
-                      <a className="btn bg-dark text-light" onClick={() => toast.dismiss(t.id)}>
-                        <i className="fa fa-times"></i>
-                      </a>
+                      {window.location.pathname == "/confirm-order" && (
+                        <>
+                          <b className="pe-2">Can not logout at Checkout </b>
+                          <a className="btn bg-dark text-light" onClick={() => toast.dismiss(t.id)}>
+                            <i className="fa fa-times"></i>
+                          </a>
+                        </>
+                      )}
+                      {window.location.pathname !== "/confirm-order" && (
+                        <>
+                          <b>Log Out? </b>
+                          <a
+                            className="btn bg-info text-light  mx-2"
+                            onClick={() => {
+                              removeCookie("uToken");
+                              toast.dismiss(t.id);
+                            }}
+                          >
+                            <i className="fa fa-check"></i>
+                          </a>
+                          <a className="btn bg-dark text-light" onClick={() => toast.dismiss(t.id)}>
+                            <i className="fa fa-times"></i>
+                          </a>
+                        </>
+                      )}
                     </span>
                   ))
                 }
@@ -165,7 +177,7 @@ const Header = (props) => {
               ></i>
             )}
             {cookies.uToken == undefined && (
-              <Link to="/user" className="link text-dark">
+              <Link to="/user/main" className="link text-dark">
                 <i className="fa fa-user mx-4" style={{ cursor: "pointer" }}></i>
               </Link>
             )}

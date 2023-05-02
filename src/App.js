@@ -34,7 +34,7 @@ function App() {
           />
 
           <Route path="/cart" element={<Cart check={(e) => setChk(e)} og={chk} />} />
-          <Route path="/user" element={<User check={(e) => setChk(e)} og={chk} />} />
+          <Route path="/user/:red" element={<User check={(e) => setChk(e)} og={chk} />} />
         </Routes>
       </Router>
     </>
