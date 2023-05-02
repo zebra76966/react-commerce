@@ -68,7 +68,7 @@ const AllProds = (props) => {
                       key={i}
                       id={i}
                       record={ini}
-                      type={ini.category}
+                      type={curnProd.type}
                       category={curnProd.category}
                       ogs={props.og}
                       checks={(e) => props.check(e)}
