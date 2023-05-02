@@ -54,13 +54,13 @@ const ProdView = (props) => {
       localStorage.setItem("cart", JSON.stringify(arr));
       props.check(!props.og);
       if (br == "bn") {
-        window.location.href = "/confirm-order";
+        window.location.href = "/user/confirm-order";
       }
     } else if (localStorage.getItem("cart") == null) {
       localStorage.setItem("cart", JSON.stringify([itemsArr]));
       props.check(!props.og);
       if (br == "bn") {
-        window.location.href = "/confirm-order";
+        window.location.href = "/user/confirm-order";
       }
     }
   }
