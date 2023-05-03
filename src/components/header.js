@@ -50,7 +50,13 @@ const Header = (props) => {
               <span className="navbar-toggler-icon"></span>
             </button>
             <Link to="/" className="navbar-brand fs-4 ps-3 pt-5 pb-0 align-middle">
-              Fashionista .
+              Fashion{" "}
+              <span
+                className="bg-dark text-light px-1 rounded fw-bold"
+                style={{ fontFamily: "arial" }}
+              >
+                <em>Hub</em>
+              </span>
             </Link>
           </div>
           <div className="collapse navbar-collapse w-100 " id="navbarSupportedContent">
