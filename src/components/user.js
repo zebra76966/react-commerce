@@ -15,7 +15,7 @@ const User = () => {
 
   const location = useLocation();
   const { check } = !location.state ? "login" : location.state;
-
+  const [rimages, setRimages] = useState([{}]);
   const [userUpdata, setUserupdata] = useState([]);
   const [isLoading, setIsloading] = useState(false);
   const [isverified, setVerified] = useState(false);
@@ -67,8 +67,30 @@ const User = () => {
       window.location.href = `/cart`;
     }
   }
+
+  useEffect(() => {
+    Axios.get(
+      "https://api.unsplash.com/search/photos?client_id=wWKy3OxVoWxdHRa0Xp5SmkUGUEzchajwkSoccgajwXA&query=Indian Fashion&orientation=landscape"
+    )
+      .then((response) => {
+        setRimages(response.data.results);
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  }, []);
+
+  const imageRnadom = {
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(${
+      rimages.length !== 1 ? rimages[Math.floor(Math.random() * 10)].urls.regular : "logo192.png"
+    })`,
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+  };
   return (
-    <>
+    <div style={imageRnadom}>
       {isLoading && (
         <div className="loader">
           <div className="border border-1 border-dark p-4 rounded shadow-lg">
@@ -80,7 +102,7 @@ const User = () => {
 
       {((!isverified && !location.state) || (!isverified && check == "Login")) && <Login />}
       {!isverified && check == "SignUp" && <SignUp />}
-    </>
+    </div>
   );
 };
 export default User;

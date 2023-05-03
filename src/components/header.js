@@ -57,11 +57,11 @@ const Header = (props) => {
             <ul className="navbar-nav  mb-2 mb-lg-0 mx-auto">
               <li className="nav-item">
                 <Link
-                  to="/"
-                  className={`nav-link ${cPage == "Home" ? "active" : ""}`}
-                  onClick={() => setPage("Home")}
+                  to="/all-products/all/Women/Indian"
+                  className={`nav-link ${cPage == "Ethnics" ? "active" : ""}`}
+                  onClick={() => setPage("Ethnics")}
                 >
-                  Home
+                  Ethnics
                 </Link>
               </li>
               <li className="nav-item">
@@ -107,6 +107,15 @@ const Header = (props) => {
                   onClick={() => setPage("TP")}
                 >
                   T-Shirst & Polos
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="/all-products/all/kids/clothes"
+                  className={`nav-link ${cPage == "kids" ? "active" : ""}`}
+                  onClick={() => setPage("kids")}
+                >
+                  Kids
                 </Link>
               </li>
             </ul>

@@ -10,6 +10,7 @@ const Login = () => {
   const [cookies, setCookie, removeCookie] = useCookies(["uToken"]);
   const [response, setResponse] = useState([]);
   const [tresponse, setTresponse] = useState("");
+
   const [udata, setUdata] = useState({
     uemail: "",
     pw: "",
@@ -60,8 +61,7 @@ const Login = () => {
           <form
             id="uform"
             onSubmit={handlesubmit}
-            className="row g-3 col-11 col-md-5 p-4 my-5 text-dark rounded shadow-lg"
-            // style={{ background: "#36393f" }}
+            className="row g-3 col-11 col-md-5 p-4 my-5 text-dark rounded shadow-lg bg-light"
             data-aos="fade-down"
           >
             <h3 className="fw-bold">Login</h3>

@@ -61,12 +61,16 @@ const Carousel = (props) => {
               </div>
             </div>
             <div className="carousel-item">
-              <img src="assets/imgs/2.jpg" className="d-block" alt="..." />
+              <img
+                src="https://cdn.shopify.com/s/files/1/0341/4805/7228/files/banner_90c07307-9719-4d0f-bf9a-4bb7c66733cc.jpg?v=1665404300"
+                className="d-block"
+                alt="..."
+              />
               <div className="carousel-caption  d-md-block">
-                <h5 className="fs-1 fw-bold">Feel Empowered</h5>
-                <p className="lead">Checkout the trendiest looks for Women.</p>
+                <h5 className="fs-1 fw-bold">Feel Traditional</h5>
+                <p className="lead">Checkout the Ethincs looks for Women.</p>
                 <Link
-                  to="/all-products/all/Women/clothes"
+                  to="/all-products/all/Women/Indian"
                   className="btn btn-light px-3 py-2 fs-5 shadow-lg"
                 >
                   Explore More
