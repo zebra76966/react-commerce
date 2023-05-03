@@ -215,7 +215,7 @@ const ProdView = (props) => {
           })}
         <div className="col-12 my-3 d-flex justify-content-end">
           <Link
-            to={`/all-products/all/${curnProd.category}/all`}
+            to={`/all-products/all/${curnProd.category}/${curnProd.type}`}
             className="btn btn-lg btn-dark border-0  shadow-lg"
           >
             Show More

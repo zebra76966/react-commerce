@@ -54,10 +54,12 @@ const AllProds = (props) => {
         <div className="row">
           {products
             .filter((e) =>
-              curnProd.category !== "all"
+              curnProd.category !== "all" && curnProd.type !== "all"
                 ? e.gender == curnProd.category && e.category == curnProd.type
-                : curnProd.type !== "all"
-                ? e.gender == e.gender && e.category == curnProd.type
+                : curnProd.type !== "all" && curnProd.category == "all"
+                ? e.category == curnProd.type && e.gender == e.gender
+                : curnProd.type == "all" && curnProd.category !== "all"
+                ? e.gender == curnProd.category && e.category == e.category
                 : e.gender == e.gender
             )
             .map((ini, i) => {
