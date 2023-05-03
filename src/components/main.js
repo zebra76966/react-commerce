@@ -13,6 +13,7 @@ const Main = (props) => {
     opacity: mouse,
     transition: "all 0.5s ease-in-out",
   };
+
   return (
     <>
       <Carousel images={true} />
