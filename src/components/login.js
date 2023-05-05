@@ -34,9 +34,14 @@ const Login = () => {
     Axios.post("https://blogproapi.000webhostapp.com/apiPhp/myFiles/apiSignIn.php", FD, config)
       .then((response) => {
         typeof response.data == "string" ? setTresponse(response.data) : setResponse(response.data);
-        response.length !== 0 && setCookie("uToken", response.data.token, { path: "/" });
+
+        response.data !== "Email or Password doesn't exist or incorrect" &&
+          setCookie("uToken", response.data.token, { path: "/" });
         setUdata({ uemail: "", pw: "" });
-        toast.success("Success");
+
+        response.data !== "Email or Password doesn't exist or incorrect"
+          ? toast.success("Success")
+          : toast.error("Error");
         setIsloading(false);
       })
       .catch((error) => {

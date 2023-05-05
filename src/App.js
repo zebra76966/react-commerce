@@ -5,6 +5,7 @@ import ProdView from "./components/itemView";
 import Cart from "./components/cart";
 import AllProds from "./components/products";
 import ConfirmOrder from "./components/confirm";
+import About from "./components/about";
 import "./components/master.css";
 import User from "./components/user";
 
@@ -36,6 +37,7 @@ function App() {
 
           <Route path="/cart" element={<Cart check={(e) => setChk(e)} og={chk} />} />
           <Route path="/user/:red" element={<User check={(e) => setChk(e)} og={chk} />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </Router>
     </>

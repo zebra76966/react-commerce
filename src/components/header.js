@@ -124,6 +124,15 @@ const Header = (props) => {
                   Kids
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link
+                  to="/about"
+                  className={`nav-link ${cPage == "about" ? "active" : ""}`}
+                  onClick={() => setPage("about")}
+                >
+                  About
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -151,7 +160,7 @@ const Header = (props) => {
                 <i className="fa fa-shopping-bag" style={{ cursor: "pointer" }}></i>
               </Link>
             </div>
-            {cookies.uToken !== undefined && (
+            {cookies.uToken !== undefined && cookies.uToken.length !== 0 && (
               <i
                 className="fa fa-sign-out mx-4"
                 onClick={() =>
