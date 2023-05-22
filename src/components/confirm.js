@@ -176,7 +176,7 @@ const ConfirmOrder = (props) => {
                       <p className="text-lead pb-0 mb-0">{ini.itemPrice}</p>
                     </div>
                     <div className="col-2 d-flex align-items-center text-end pe-0">
-                      <button
+                      <button type="button"
                         className="btn btn-dark rounded-circle"
                         onClick={() => {
                           let newarr = [...cart];
