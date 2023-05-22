@@ -31,7 +31,7 @@ const Login = () => {
       headers: { "content-type": "multipart/form-data" },
     };
     setTresponse("");
-    Axios.post("https://blogproapi.000webhostapp.com/apiPhp/myFiles/apiSignIn.php", FD, config)
+    Axios.post("https://blogpro.tech/apiPhp/myFiles/apiSignIn.php", FD, config)
       .then((response) => {
         typeof response.data == "string" ? setTresponse(response.data) : setResponse(response.data);
 
